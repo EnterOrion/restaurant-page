@@ -1,1 +1,1 @@
-console.log("hello");
+(()=>{"use strict";console.log("hello"),function(){const e=document.querySelector("#content"),t=document.createElement("p");t.textContent="This is the greatest restaurant of all time. Furthermore, we are the greatest restaurant in all of the alternate realities!",e.appendChild(t)}()})();
