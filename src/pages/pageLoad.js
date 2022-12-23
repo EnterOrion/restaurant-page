@@ -15,6 +15,7 @@ function createButton(id, text) {
     const button = document.createElement('button');
     button.setAttribute('id', id);
     button.textContent = text;
+    button.classList.add('tab');
     return button;
 }
 

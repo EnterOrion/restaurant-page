@@ -1,4 +1,5 @@
 function homePage(){
+    activeButton('nav1');
     const mainImage = document.createElement("img");
     mainImage.src = "images/cafe.jpg";
     mainImage.alt = "Cafe with lights";
@@ -20,5 +21,12 @@ function createParagraph(text) {
     return paragraph;
 } 
 
+function activeButton(id) {
+    const activeButton = document.querySelector('.tab.active');
+    if (activeButton) activeButton.classList.remove('active');
+  
+    const homeButton = document.getElementById(id);
+    homeButton.classList.add('active');
+}
   
 export default homePage;
