@@ -2,9 +2,9 @@ function contactPage() {
     activeButton('nav3');
     const content = document.querySelector('#main');
     content.textContent = "";
-    const paragraph = document.createElement("p");
-    paragraph.textContent = "Contact";
-    content.appendChild(paragraph);
+    const contactHeader = document.createElement("h2");
+    contactHeader.textContent = "Contact";
+    content.appendChild(contactHeader);
 }
 
 function activeButton(id) {
