@@ -59,7 +59,8 @@ body {
 img {
     object-fit: cover;
     height: 30rem;
- width: 80%;
+    width: 80%;
+    border-radius: 1em;
 }
 
 
@@ -73,11 +74,22 @@ nav {
 
 button {
     padding: 15px;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: $font-size-lg;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+button:hover {
+    color: pink;
 }
 
 p {
-    width: 70%;
+    width: 80%;
     font-size: $font-size-xl;
+    text-align: center;
 }
 
 h1 {
