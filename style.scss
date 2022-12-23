@@ -114,9 +114,9 @@ h1 {
 }
 
 [id^="item"] {
+    @extend %center;
     width: 30rem;
     height: 20rem;
-    background-color: white;
 }
 
 #item5 {
@@ -125,4 +125,11 @@ h1 {
 
 h4 {
    @extend %center;
+}
+
+[id^="image"] {
+    object-fit: cover;
+    height: 25rem;
+    width: 90%;
+    border-radius: 1em;
 }
