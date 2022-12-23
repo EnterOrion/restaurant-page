@@ -50,7 +50,7 @@ nav {
 }
 
 button {
-  padding: 15px;
+  padding: 10px;
   background-color: transparent;
   border: transparent;
   color: white;
@@ -59,7 +59,7 @@ button {
 }
 
 button:hover {
-  color: pink;
+  text-decoration: underline;
 }
 
 p {
@@ -71,6 +71,10 @@ p {
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 2.8rem;
+}
+
+.active {
+  color: rgb(253, 153, 170);
 }
 
 /*# sourceMappingURL=style.css.map */
