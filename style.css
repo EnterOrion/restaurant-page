@@ -33,6 +33,7 @@ img {
   object-fit: cover;
   height: 30rem;
   width: 80%;
+  border-radius: 1em;
 }
 
 nav {
@@ -45,11 +46,21 @@ nav {
 
 button {
   padding: 15px;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  font-size: 1.125rem;
+  font-family: "Lato", sans-serif;
+}
+
+button:hover {
+  color: pink;
 }
 
 p {
-  width: 70%;
+  width: 80%;
   font-size: 1.3125rem;
+  text-align: center;
 }
 
 h1 {
