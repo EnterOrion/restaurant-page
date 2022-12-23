@@ -1,4 +1,4 @@
-body {
+h4, body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 60%;
-  height: 50rem;
+  height: 100%;
   background-color: rgb(161, 30, 56);
 }
 
@@ -75,6 +75,22 @@ h1 {
 
 .active {
   color: rgb(253, 153, 170);
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+[id^=item] {
+  width: 30rem;
+  height: 20rem;
+  background-color: white;
+}
+
+#item5 {
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
