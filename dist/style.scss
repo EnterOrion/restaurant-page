@@ -23,6 +23,7 @@ html, body {
 body {
     @extend %center;
     padding: 0%;
+    font-family: 'Lato', sans-serif;
 
 }
 
@@ -42,6 +43,7 @@ body {
         hsl(324deg 83% 71%) 89%,
         hsl(320deg 84% 73%) 100%
       );
+    color: rgb(255, 209, 209);
 }
 
 #content {
@@ -50,13 +52,14 @@ body {
     align-items: center;
     width: 60%;
     height: 200rem;
-    background-color: rgb(252, 200, 210);
+    background-color: rgb(161, 30, 56);
 }
 
 
 img {
-    height: 31.25rem;
-    width: 31.25rem;
+    object-fit: cover;
+    height: 30rem;
+ width: 80%;
 }
 
 
@@ -65,9 +68,19 @@ nav {
     justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: purple;
+    background-color: rgb(46, 1, 12);
 }
 
 button {
     padding: 15px;
+}
+
+p {
+    width: 70%;
+    font-size: $font-size-xl;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
 }
