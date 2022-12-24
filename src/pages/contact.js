@@ -4,7 +4,29 @@ function contactPage() {
     content.textContent = "";
     const contactHeader = document.createElement("h2");
     contactHeader.textContent = "Contact";
+
+    const numberHeader = document.createElement("h3");
+    numberHeader.textContent = "Phone";
+    const mailHeader = document.createElement("h3");
+    mailHeader.textContent = "E-mail";
+
+
+    const numberParagraph = document.createElement("p");
+    numberParagraph.textContent = "(123) - 456 - 7890"
+    const mailParagraph = document.createElement("p");
+    mailParagraph.textContent = "anemail@gmail.com"
+
+    numberParagraph.setAttribute('id', "phone-contact");
+    mailParagraph.setAttribute('id', "mail-contact");
+
+    
+
     content.appendChild(contactHeader);
+    content.appendChild(numberHeader);
+    content.appendChild(numberParagraph);
+    content.appendChild(mailHeader);
+    content.appendChild(mailParagraph);
+    
 }
 
 function activeButton(id) {

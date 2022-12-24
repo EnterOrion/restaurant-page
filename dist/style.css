@@ -134,8 +134,17 @@ h3 {
   box-shadow: 0px 5px 10px 0px rgba(68, 0, 28, 0.5);
 }
 
+#mail-contact, #phone-contact {
+  margin-top: -1.5rem;
+  align-self: start;
+}
+
 h3 {
   text-decoration: underline;
+}
+
+#phone-contact {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

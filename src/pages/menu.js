@@ -32,8 +32,8 @@ function menuPage() {
     const caption1 = createCaption("caption1", "Star Foam Latte - $5");
     const caption2 = createCaption("caption2", "Iced Latte with Milky Way Cream - $5.5");
     const caption3 = createCaption("caption3", "Earthy Matcha Latte - $6");
-    const caption4 = createCaption("caption4", "Toast with choice of jam - $3");
-    const caption5 = createCaption("caption5", "Freshly baked cookies - $5");
+    const caption4 = createCaption("caption4", "Toast with Stellar Jam - $3");
+    const caption5 = createCaption("caption5", "Constellation Cookies - $5");
 
     content.appendChild(menuHeader);
     content.appendChild(drinkHeader);
