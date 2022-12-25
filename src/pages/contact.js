@@ -2,45 +2,45 @@ function contactPage() {
   activeButton("nav3");
   const content = document.querySelector("#main");
   content.textContent = "";
+
   const contactHeader = document.createElement("h2");
-  contactHeader.textContent = "Contact";
-
   const numberHeader = document.createElement("h3");
-  numberHeader.textContent = "Phone";
   const mailHeader = document.createElement("h3");
-  mailHeader.textContent = "E-mail";
-
   const addressHeader = document.createElement("h3");
+
+  contactHeader.textContent = "Contact";  
+  numberHeader.textContent = "Phone";
+  mailHeader.textContent = "E-mail";
   addressHeader.textContent = "Address";
 
   const numberParagraph = document.createElement("p");
-  numberParagraph.textContent = "(123) - 456 - 7890";
   const mailParagraph = document.createElement("p");
+  const addressParagraph = document.createElement("p");
+  const addressParagraph2 = document.createElement("p");
+
+  numberParagraph.textContent = "(123) - 456 - 7890";
   mailParagraph.textContent = "anemail@gmail.com";
+  addressParagraph.textContent =
+  "Location of the cafe: At the top of the Great Pyramid of Giza";
+  addressParagraph2.textContent =
+  "For those coming from space, parking is located out back.";
+
+  const everythingDiv = document.createElement("div");
+  const locationContainer = document.createElement("div");
+
 
   numberParagraph.setAttribute("id", "phone-contact");
   mailParagraph.setAttribute("id", "mail-contact");
-
-  const everythingDiv = document.createElement("div");
   everythingDiv.setAttribute("id", "grid-div");
-
-  const locationContainer = document.createElement("div");
   locationContainer.setAttribute("id", "loc-holder");
+  addressParagraph.setAttribute("id", "address-contact");
+  addressParagraph2.setAttribute("id", "address-contact2");
 
   const locationImage = document.createElement("img");
   locationImage.setAttribute("id", "location");
   locationImage.src = "images/location.png";
   locationImage.alt = "Location of cafe: Great Pyramid of Giza";
-
-  const addressParagraph = document.createElement("p");
-  addressParagraph.textContent =
-    "Location of the cafe: At the top of the Great Pyramid of Giza";
-  addressParagraph.setAttribute("id", "address-contact");
-
-  const addressParagraph2 = document.createElement("p");
-  addressParagraph2.textContent =
-    "For those coming from space, parking is located out back.";
-  addressParagraph2.setAttribute("id", "address-contact2");
+  locationContainer.appendChild(locationImage);
 
   const phoneContainer = document.createElement("div");
   phoneContainer.setAttribute("id", "phone-box");
@@ -57,8 +57,6 @@ function contactPage() {
   addressContainer.appendChild(addressHeader);
   addressContainer.appendChild(addressParagraph);
   addressContainer.appendChild(addressParagraph2);
-
-  locationContainer.appendChild(locationImage);
 
   const column1 = document.createElement("div");
   const column2 = document.createElement("div");

@@ -2,6 +2,7 @@ function menuPage() {
   activeButton("nav2");
   const content = document.querySelector("#main");
   content.textContent = "";
+  
   const menuHeader = document.createElement("h2");
   const foodHeader = document.createElement("h3");
   const drinkHeader = document.createElement("h3");
@@ -9,6 +10,7 @@ function menuPage() {
   menuHeader.textContent = "Menu";
   foodHeader.textContent = "Food";
   drinkHeader.textContent = "Beverages";
+
   const menuItems = createDiv("menu");
   const item1 = createDiv("item1");
   const item2 = createDiv("item2");
@@ -20,11 +22,7 @@ function menuPage() {
   const image2 = createImage("image2", "images/iceLatte.jpg", "An iced latte");
   const image3 = createImage("image3", "images/matcha.jpg", "A matcha latte");
   const image4 = createImage("image4", "images/toast.jpg", "Toast with jam");
-  const image5 = createImage(
-    "image5",
-    "images/cookies.jpg",
-    "Plate of cookies"
-  );
+  const image5 = createImage("image5","images/cookies.jpg","Plate of cookies");
 
   item1.appendChild(image1);
   item2.appendChild(image2);
@@ -33,10 +31,7 @@ function menuPage() {
   item5.appendChild(image5);
 
   const caption1 = createCaption("caption1", "Star Foam Latte - $5");
-  const caption2 = createCaption(
-    "caption2",
-    "Iced Latte with Milky Way Cream - $5.5"
-  );
+  const caption2 = createCaption("caption2","Iced Latte with Milky Way Cream - $5.5");
   const caption3 = createCaption("caption3", "Earthy Matcha Latte - $6");
   const caption4 = createCaption("caption4", "Toast with Stellar Jam - $3");
   const caption5 = createCaption("caption5", "Constellation Cookies - $5");
